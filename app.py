@@ -244,7 +244,7 @@ def create_pdf(buffer, summary_text, top_products_df, rules_df):
     return buffer
 
 def main():
-    st.title("📊 Market Basket Intelligence — Fully Cleaned Version")
+    st.title("📊 Market Basket Intelligence")
     uploaded_file = st.sidebar.file_uploader("Upload CSV", type=['csv'])
     min_support = st.sidebar.slider("Min support", 0.01, 0.3, 0.05, 0.01)
     min_confidence = st.sidebar.slider("Min confidence", 0.1, 0.95, 0.5, 0.05)
